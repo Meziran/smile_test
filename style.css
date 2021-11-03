@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* LINK */
+.link-test {
+  text-decoration: none;
+  width: 300px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 24px;
+  font-family: "Marvel";
+  font-weight: bold;
+  line-height: 1.5;
+}
+.link-test:link {
+  color: #5c5c5c;
+  border-bottom: 1px solid #5c5c5c;
+}
+.link-test:visited {
+  color: #adadad;
+  border-bottom: 1px solid #e1e1e1;
+}
+.link-test:hover {
+  color: #2d2d2d;
+  border-bottom: 1px solid #ffffff;
+  background-color: #e1e1e1;
+}
+.link-test:active {
+  color: #2d2d2d;
+  border-bottom: 1px solid #ffffff;
+}
+/* CHECKBOX */
+.checkbox-el {
+  height: 50px;
+}
+.checkbox:checked + .modal-icon-checbox {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.modal-icon-checbox {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: #22f8b9;
+  background-color: #22f8b9;
+}
+.checkbox:checked + .modal-icon-checbox {
+  background-color: #22f8b9;
+
+  fill: #0000ff;
+}
+.checkbox:disabled + .modal-icon-checbox::before {
+  background-color: #eaeaea;
+}
+/* RADIO */
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-radio > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-color: #22f8b9;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-radio > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.custom-radio > input:checked + span::before {
+  border-color: #0b76ef;
+
+  background-color: #22f8b9;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300f'/%3e%3c/svg%3e");
+}
+/* FORMA */
+
+.btn-send {
+  margin-top: 30px;
+  height: 60px;
+  width: 130px;
+  border: 2px solid#0000ff;
+  color: #0000ff;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-family: "Marvel";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  color: #ffffff;
+  background-color: #0000ff;
+  transition: 250ms;
+}
+
+form {
+  font-size: 24px;
+  font-family: "Marvel";
+  font-weight: bold;
+  line-height: 1.5;
+  position: relative;
+  height: 50px;
+  width: 300px;
+  color: #363636;
+  background: transparent;
+}
+.form-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-arrow {
+  justify-self: end;
+  padding-left: 1px;
+}
+.form-control {
+  font-size: 24px;
+  font-family: "Marvel";
+
+  font-weight: bold;
+  line-height: 1.5;
+  outline: 0;
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-bottom: 2px solid #363636;
+}
+
+.container-form {
+  width: 300px;
+  border: none;
+}
+.sect {
+  border: 1px solid #fff;
+  border-bottom: 2px solid #363636;
+}
+.text-exampl {
+  color: #363636;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
