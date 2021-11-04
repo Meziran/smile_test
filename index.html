@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
     <!-- LINK -->
     <section>
       <div class="cont-link container">
@@ -37,7 +38,21 @@
           <svg class="modal-icon-checbox" width="20" height="20">
             <use href="./img/sprite.svg#icon-check"></use>
           </svg>
+          <span></span>
         </label>
+        <label for="checkbox">
+            <input
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+              id="checkbox"
+              class="checkbox"
+            />
+            <svg class="modal-icon-checbox" width="20" height="20">
+              <use href="./img/sprite.svg#icon-check"></use>
+            </svg>
+            <span></span>
+          </label>
         </div>
       </div>
     </section>
@@ -47,13 +62,32 @@
             <label class="custom-radio">
               <input type="radio" name="color" value="" />
               <span></span>
+              <label class="custom-radio">
+                <input type="radio" name="color" value="" />
+                <span></span>
+              </label>
             </label>
           </div>
     </section>
-
+ <!-- select -->
+        <!-- <section class="container">
+          <div class="select is-active">
+            <div class="select-header">
+            <span class="select-current">123</span>
+            <div class="select-icon">&times;</div>
+            </div>
+    
+            <div class="select-body">
+              <div class="select-item">1</div>
+              <div class="select-item">2</div>
+              <div class="select-item">3</div>
+              <div class="select-item">4</div>
+            </div>
+          </div>
+        </section> -->
     <!-- FORM -->
     <section class="container">
-        <div>
+        
         <form class="container-form">
           <div class="form-select">
             <select class="form-control">
@@ -86,6 +120,7 @@
         </form>
   
     </section>
-    <section class="container"></section>
+
+       <script src="./js/select.js"></script>
   </body>
 </html>
