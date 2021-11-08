@@ -4,98 +4,191 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smile_test</title>
+
+    <title>Links and form elements</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
 
-    <!-- LINK -->
-    <section>
+  <body>
+    <header>
+      <div class="container">
+        <span class="header-color">h6:</span>
+        <span class="header-title">Links and form elements</span>
+      </div>
+    </header>
+    <div class="">
+      <!-- LINK -->
       <div class="cont-link container">
         <ul>
-          <li><a class="link-test" href="http://">Lorem ipsum dolor</a></li>
-          <li><a class="link-test" href="http://">Lorem ipsum dolor</a></li>
+          <li class="link-list">
+            <a class="link" href="http://www">Lorem ipsum dolor</a>
+          </li>
+          <li class="link-list">
+            <a class="link" href="http://www">Lorem ipsum dolor</a>
+          </li>
         </ul>
       </div>
-    </section>
-    <!-- CHECKBOX -->
-    <section class="container">
-      <div class="checkbox-el">
-        <label for="checkbox">
-          <input
-            type="checkbox"
-            name="checkbox"
-            value="checkbox"
-            id="checkbox"
-            class="checkbox"
-          />
-          <svg class="modal-icon-checbox" width="20" height="20">
-            <use href="./img/sprite.svg#icon-check"></use>
-          </svg>
-          <span></span>
-        </label>
-        <label for="checkbox">
-            <input
-              type="checkbox"
-              name="checkbox"
-              value="checkbox"
-              id="checkbox"
-              class="checkbox"
-            />
-            <svg class="modal-icon-checbox" width="20" height="20">
-              <use href="./img/sprite.svg#icon-check"></use>
-            </svg>
-            <span></span>
-          </label>
+      <!-- SELECTED -->
+      <div class="container">
+      <ul >
+        <li class="selected-conteiner">        
+          <div> <select class="selected-one" name="state">
+            <option value="1">First item</option>
+            <option value="2">Second item</option>
+            <option value="3">Hovered item</option>
+          </select></div> </li>
+        <li class="selected-conteiner">        
+           <div>
+             <select class="selected-two" name="state">
+            <option value="1">First item</option>
+            <option value="2">Second item</option>
+            <option value="3">Hovered item</option>
+          </select>
+        </div> 
+      </li>
+      </ul>
+    </div>
+      <div class="selected-conteiner container">
+        <div class="container selected">
+
+        </div>
+        <div class="container selected">
+
         </div>
       </div>
-    </section>
-      <!-- RADIO -->
-    <section class="container">
-        <div class="radio">
-            <label class="custom-radio">
-              <input type="radio" name="color" value="" />
-              <span></span>
-              <label class="custom-radio">
-                <input type="radio" name="color" value="" />
-                <span></span>
+      <div class="check">
+        <div class="container">
+          <!-- CHECKBOX -->
+          <ul>
+            <li>
+              <label class="checkbox-label-works" for="checkbox-sq-works"
+                ><input
+                  class="checkbox-input-works"
+                  type="checkbox"
+                  name="#"
+                  id="checkbox-sq-works"
+                />
+                <svg class="check-icon">
+                  <use href="./img/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Lorem ipsum
               </label>
-            </label>
-          </div>
-    </section>
- <!-- select -->
-        <!-- <section class="container">
-          <div class="select is-active">
-            <div class="select-header">
-            <span class="select-current">123</span>
-            <div class="select-icon">&times;</div>
-            </div>
-    
-            <div class="select-body">
-              <div class="select-item">1</div>
-              <div class="select-item">2</div>
-              <div class="select-item">3</div>
-              <div class="select-item">4</div>
-            </div>
-          </div>
-        </section> -->
-    <!-- FORM -->
-    <section class="container">
-        
+            </li>
+            <li>
+              <label class="checkbox-label-works" for="checkbox-sq"
+                ><input
+                  class="checkbox-input-works"
+                  type="checkbox"
+                  name="#"
+                  id="checkbox-sq"
+                />
+                <svg class="check-icon">
+                  <use href="./img/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Lorem ipsum
+              </label>
+            </li>
+            <li>
+              <label class="checkbox-label-works" for="checkbox-sq-disabled"
+                ><input
+                  class="checkbox-input-works"
+                  type="checkbox"
+                  name="#"
+                  id="checkbox-sq-disabled"
+                  disabled
+                />
+                <svg class="check-icon">
+                  <use href="./img/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Lorem ipsum
+              </label>
+            </li>
+          </ul>
+          <!-- RADIO -->
+          <ul class="radio-position">
+            <li>
+              <div>
+                <label class="radio-label" for="radio-works-1">
+                  <input
+                    class="radio-input-works"
+                    type="radio"
+                    name="radio"
+                    id="radio-works-1"
+                  />
+                  <svg class="radio-check">
+                    <use href="./img/sprite.svg#icon-controller"></use>
+                  </svg>
+                  lorem ipsum dolor
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="radio">
+                <label class="radio-label" for="radio-works">
+                  <input
+                    class="radio-input-works"
+                    type="radio"
+                    name="radio"
+                    id="radio-works"
+                  />
+                  <svg class="radio-check">
+                    <use href="./img/sprite.svg#icon-controller"></use>
+                  </svg>
+                  lorem ipsum dolor
+                </label>
+              </div>
+            </li>
+            <li>
+              <label class="radio-label" for="radio-works-disabled">
+                <input
+                  class="radio-input-works"
+                  type="radio"
+                  name="#"
+                  id="radio-works-disabled"
+                  disabled
+                />
+                <svg class="radio-check">
+                  <use href="./img/sprite.svg#icon-controller"></use>
+                </svg>
+                lorem ipsum dolor
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="check">
+          <div class="radio container"></div>
+          <div class="radio container"></div>
+          <div class="radio container"></div>
+        </div> -->
+      </div>
+      <!-- BUTTON -->
+
+      <ul class="container">
+        <li><button type="button" class="btn-work">send</button></li>
+        <li><button type="button" class="btn-work">send</button></li>
+      </ul>
+
+      <!-- FORM -->
+      <div class="container">
         <form class="container-form">
-          <div class="form-select">
-            <select class="form-control">
-              <option>Selected element</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
+          <div class="selected-form">
+            <select class="selected-for-form" name="state">
+              <option value="1">1 item</option>
+              <option value="2">3 item</option>
+              <option value="3">2 item</option>
             </select>
           </div>
           <div class="form-decoration form-imput">
@@ -116,11 +209,13 @@
               placeholder="Text exampl"
             />
           </div>
-          <button type="button" class="btn-send">SEND</button>
         </form>
-  
-    </section>
-
-       <script src="./js/select.js"></script>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="./js/selected.js"></script> -->
+    <script src="./js/selected-for-form.js" type="module"></script>
+    <script src="./js/selected-one.js" type="module"></script>
+    <script src="./js/selected-two.js" type="module"></script>
   </body>
 </html>
